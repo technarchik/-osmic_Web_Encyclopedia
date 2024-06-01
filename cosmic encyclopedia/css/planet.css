@@ -1,0 +1,522 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	transition: .5s ease-in-out;
+	/* плавный переход у всех элементов страницы*/
+}
+
+html, body {
+	background-color: black;
+	background-image: url(../img/sky2.jpg);
+	background-attachment: fixed;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+	width: 100vw;
+	height: 148px;
+	background-color: indigo;
+	z-index: 1;
+	margin: 1vw 0vw;
+}
+
+#idheader {
+	width: 700px;
+	margin: 0 auto;
+}
+
+#logo {
+	width: 145px;
+	height: 145px;
+	position: relative;
+	left: 10px;
+	top: 8px;
+	float: left;
+}
+
+#logo img {
+	display: block;
+	max-width: 100px;
+	position: relative;
+	margin: 22px auto;
+}
+
+nav {
+	float: right;
+	width: 70%;
+	margin: 55px auto;
+}
+
+nav ul {
+	line-height: 20px;
+}
+
+nav ul li a {
+	float: left;
+	font-size: 26px;
+	color: white;
+	font-weight: bold;
+	padding: 9px 9px;
+} 
+
+nav ul li a:hover {
+	color: black;
+}
+
+nav ul li:active {
+	background-color: rgb(198, 165, 230);
+}
+
+main {
+	position: relative;
+	margin: 30px auto;
+	width: 80vw; /* ---------------------------------------------------------- */
+}
+
+#list {
+	width: 200px;
+	float: left;
+	margin-top: 20px;
+}
+
+#list ul li a {
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+} 
+
+#list ul li {
+	margin: 15px auto;
+}
+
+#list ul li a:hover {
+	color: black;
+}
+
+article {
+	float: left;
+	width: 60vw; /* ------------------------------------------------ */
+	margin-top: 20px;
+	color: white;
+}
+
+article h1 {
+	font-size: 26px;
+	margin: 20px;
+	text-align: center;
+	padding: 10px;
+}
+
+article h2 {
+	font-size: 20px;
+	margin: 20px;
+	line-height: 2rem;
+}
+
+p {
+	color: white;
+	font-size: 20px;
+	line-height: 2rem;
+	text-align: left;
+	word-wrap: break-word;
+}
+
+#planet h3 {
+	line-height: 2rem;
+	color: white;
+	font-size: 24px;
+	text-align: center;
+	margin: 20px;
+}
+
+#planet img {
+	position: relative;
+	float: right;
+	margin: 5%;
+}
+
+footer {
+	bottom: 0;
+	height: 100px;
+	background-color: indigo;
+	margin-top: 30px;
+	width: 100%;
+}
+
+footer p {
+	font-weight: bold;
+	height: 100px;
+	line-height: 100px;
+	font-size: 18px;
+	text-align: center;
+	width: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+#vk {
+	max-width: 60px;
+	float: right;
+	margin: 20px 40px;
+}
+
+blockquote {
+	line-height: 2rem;
+	color: white;
+	width: 300px;
+	font-size: 18px;
+	margin: 40px 40px 40px 0px;
+	float: left;
+}
+
+hr {
+	margin: 10px 0px;
+}
+
+.charact {
+	float: left;
+	line-height: 2rem;
+	margin: 30px;
+}
+
+.charact ul li {
+	font-size: 16px;
+	color: white;
+} 
+
+.planetimg {
+	width: 400px;
+}
+
+.charact li {
+	list-style-image: url(../img/star_icon_2.png);
+}
+
+form {
+	position: relative;
+	width: 200px;
+	margin: 10px 10px 10px 0px;
+}
+#list input {
+	width: 100%;
+	height: 42px;
+	padding-left: 10px;
+	border: 2px solid indigo;
+	border-radius: 5px;
+	outline: none;
+	background: #F9F0DA;
+	color: indigo;
+}
+#buttonsearch {
+	position: absolute; 
+	top: 0;
+	right: 0px;
+	width: 42px;
+	height: 42px;
+	border: none;
+	background: indigo;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+}
+
+@media all and (min-width: 1224px) {
+	.charact {
+		float: none;
+		margin: 20px;
+		font-size: 24px;
+	}
+
+	.planetimg {
+		float: none;
+		width: 500px;
+	}
+}
+
+@media all and (min-width: 1024px) and (max-width: 1224px) {
+	.charact {
+		float: none;
+		margin: 20px;
+		font-size: 24px;
+	}
+
+	.planetimg {
+		float: none;
+	}
+}
+
+@media all and (min-width: 650px) and (max-width: 1024px) {
+	article {
+		float: left;
+		width: 50vw;
+		margin-top: 20px;
+		color: white;
+	}
+
+	article h2 {
+		font-size: 16px;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		margin: 10px;
+	}
+	
+	footer {
+		bottom: 0;
+		height: 100px;
+		background-color: indigo;
+		margin-top: 30px;
+		width: 100%;
+	}
+
+	footer p {
+		font-weight: bold;
+		height: 100px;
+		line-height: 100px;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-size: 16px;
+		text-align: center;
+		width: 100%;
+	}
+
+	#vk {
+		max-width: 50px;
+		float: right;
+		margin: 25px 40px;
+	}
+
+	.planetimg {
+		width: 300px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	.charact {
+		float: none;
+		line-height: 1.5rem;
+		margin: 20px;
+	}
+
+	blockquote {
+		line-height: 1.5rem;
+		font-size: 16px;
+		margin: 20px 30px 20px 0px;
+	}
+}
+
+@media all and (min-width: 320px) and (max-width: 600px) {
+	header {
+		width: 600px;
+		height: 80px;
+	}
+	
+	#idheader {
+		width: 200px;
+		margin: 10px 10px;
+	}
+
+	#logo {
+		width: 50px;
+		height: 50px;
+		margin: 15px auto;
+	}
+
+	#logo img {
+		max-width: 50px;
+		margin: 5px auto;
+	}
+	
+	nav {
+		float: right;
+		width: 50%;
+		margin: 10px 5px;
+	}
+
+	.charact ul {
+		margin: 10px 10px;
+	}
+
+	nav ul {
+		line-height: 10px;
+	}
+	
+	nav ul li a {
+		font-size: 16px;
+		padding: 5px 5px;
+	}
+
+	#list {
+		width: 300px;
+		margin: 10px 10px;
+	}
+
+	#list ul, article h1, #planet h3 {
+		text-align: center;
+		float: none;
+		font-size: 18px;
+		margin: 20px 5px;
+		line-height: 1.2rem;
+	}
+
+	#list li form {
+		margin: 0px 20px;
+	}
+
+	article h2, #planet p {
+		float: none;
+		font-size: 13px;
+		width: 300px;
+		margin: auto 5px;
+	}
+
+	article {
+		width: 90vw;
+	}
+
+	footer {
+		height: 110px;
+		margin-top: 30px;
+		width: 100vw;
+		text-align: center;
+		margin: 10px 0px;
+	}
+
+	footer p {
+		text-align: center;
+		font-size: 10px;
+		line-height: 1rem;
+		width: 300px;
+		margin: 0px 20px 20px 20px;
+	}
+
+	#vk {
+		float: none;
+		max-width: 30px;
+		margin: 20px 5%;
+	}
+
+	.planetimg {
+		width: 200px;
+	}
+}
+
+
+@media all and (min-width: 240px) and (max-width: 320px) {	
+	header {
+		width: 320px;
+		height: 80px;
+	}
+	
+	#idheader {
+		width: 200px;
+		margin: 10px 10px;
+	}
+
+	#logo {
+		width: 50px;
+		height: 50px;
+		margin: 0px auto;
+	}
+	
+	#logo img {
+		max-width: 50px;
+		margin: 5px auto;
+	}
+	
+	nav {
+		float: right;
+		width: 50%;
+		margin: 10px 5px;
+	}
+	
+	nav ul {
+		line-height: 10px;
+	}
+	
+	nav ul li a {
+		font-size: 16px;
+		padding: 5px 5px;
+	}
+
+	#list {
+		margin: 0px 30px;
+	}
+
+	#list ul {
+		margin: 0px 30px;
+	}
+	
+	#list ul, article h1, h3 {
+		float: none;
+		text-align: center;
+		font-size: 16px;
+		line-height: 1.2rem;
+	}
+
+	h1, #planet h3, p, strong {
+		margin-top: 20px;
+		width: 80vw;
+	}
+	
+	p {
+		word-wrap: break-word;
+	}
+
+	article h2, #planet p {
+		float: none;
+		font-size: 13px;
+		width: 80vw;
+	}
+
+	article {
+		float: none;
+		width: 90vw;
+	}
+
+	.charact {
+		font-size: 13px;
+		line-height: 1.2rem;
+		margin: 20px;
+	}
+	article #planet p, article h2, .charact ul li {
+		font-size: 13px;
+		width: 80%;
+	}
+
+	footer {
+		height: 143px;
+		overflow: hidden;
+		margin-top: 30px;
+		width: 320px;
+		text-align: center;
+		padding: 5px;
+	}
+
+	footer p {
+		margin: 10px 90px;
+		font-size: 10px;
+		line-height: 1rem;
+		max-width: 120px;
+		text-align: center;
+		width: 60%;
+	}
+
+	#vk {
+		float: none;
+		max-width: 30px;
+		margin: 20px 20px;
+	}
+
+	.planetimg {
+		width: 100px;
+		float: none;
+	}
+
+	blockquote {
+		font-size: 14px;
+		width: 80vw;
+		margin: auto 10px;
+	}
+}

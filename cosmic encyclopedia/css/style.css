@@ -1,0 +1,606 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	transition: .5s ease-in-out;
+	/* плавный переход у всех элементов страницы*/
+}
+
+html, body {
+	background-color: black;
+	background-image: url(../img/sky1.jpg);
+	background-attachment: fixed;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+	width: 100vw;
+	height: 148px;
+	background-color: indigo;
+	margin: 1vw 0vw;
+}
+
+#idheader {
+	width: 700px;
+	margin: 0 auto;
+}
+
+#logo {
+	width: 145px;
+	height: 145px;
+	position: relative;
+	left: 10px;
+	top: 8px;
+	float: left;
+}
+
+#logo img {
+	display: block;
+	max-width: 100px;
+	position: relative;
+	margin: 22px auto;
+}
+
+nav {
+	float: right;
+	width: 70%;
+	margin: 55px auto;
+}
+
+nav ul {
+	line-height: 20px;
+}
+
+nav ul li a {
+	float: left;
+	font-size: 26px;
+	color: white;
+	font-weight: bold;
+	padding: 9px 9px;
+} 
+
+nav ul li a:hover {
+	color: black;
+}
+
+nav ul li:active {
+	background-color: rgb(198, 165, 230);
+}
+
+main {
+	position: relative;
+	margin: 30px auto;
+	width: 80vw; /* ---------------------------------------------------------- */
+}
+
+#list {
+	width: 200px;
+	float: left;
+	margin-top: 20px;
+}
+
+#list ul li a {
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+} 
+
+#list ul li {
+	margin: 15px auto;
+}
+
+#list ul li a:hover {
+	color: black;
+}
+
+#mercury {
+	width:200px;
+}
+
+#venus, #earth {
+	width:250px;
+}
+
+#mars {
+	width: 240px;
+}
+
+#jupiter, #uranus, #neptune  {
+	width:400px;
+}
+
+#saturn {
+	width:500px;
+}
+
+article {
+	float: left;
+	width: 60vw; /* ------------------------------------------------ */
+	margin-top: 20px;
+	color: white;
+}
+
+article h1 {
+	font-size: 26px;
+	margin: 20px;
+	text-align: center;
+	padding: 10px;
+}
+
+article h2 {
+	font-size: 20px;
+	margin: 20px;
+	line-height: 2rem;
+}
+
+p {
+	color: white;
+	font-size: 20px;
+	line-height: 2rem;
+	text-align: left;
+}
+
+#planet h3 {
+	float: none;
+	line-height: 2rem;
+	color: white;
+	font-size: 24px;
+	text-align: center;
+	margin: 50px;
+}
+
+.pars_planets {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#planets a {
+	position: relative;
+	margin: 40px;
+	margin: 5%;
+}
+
+footer {
+	bottom: 0;
+	height: 100px;
+	background-color: indigo;
+	margin-top: 30px;
+	width: 100%;
+}
+
+footer p {
+	font-weight: bold;
+	height: 100px;
+	line-height: 100px;
+	font-size: 18px;
+	text-align: center;
+	width: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+#vk {
+	max-width: 60px;
+	float: right;
+	margin: 20px 40px;
+}
+
+#tooltip {
+	z-index: 9999;
+	position: absolute;
+	display: none;
+	top:0px;
+	left:0px;
+	width: 100px;
+	background-color: transparent;
+	padding: 5px 10px 5px 10px;
+	color: white;
+	border-radius: 5px; 
+	box-shadow: 2px 2px 2px;
+}
+
+.main .question {
+	margin-bottom: 20px;
+}
+.formtest {
+	width: 80vw;
+	margin-top: 20px;
+	color: white;
+}
+.formtest h2 {
+	font-size: 26px;
+	margin: 20px;
+}
+.formtest .answer {
+	font-size: 20px;
+	margin: 20px;
+}
+.formtest .question {
+	margin: 20px 20% 50px 20%;
+}
+.button {
+	margin: 10px;
+	min-width: 200px;
+	border: 2px solid transparent;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: white;
+	font-size: 24px;
+	background-color: indigo;
+	border-radius: 5%;
+	padding: 1vw;
+}
+.button:hover {
+	background: transparent;
+	color: white;
+	border-color: indigo;
+}
+#buttons {
+	text-align: center;
+}
+
+form {
+	position: relative;
+	width: 200px;
+	margin: 10px 10px 10px 0px;
+}
+#list input {
+	width: 100%;
+	height: 42px;
+	padding-left: 10px;
+	border: 2px solid indigo;
+	border-radius: 5px;
+	outline: none;
+	background: #F9F0DA;
+	color: indigo;
+}
+#buttonsearch {
+	position: absolute; 
+	top: 0;
+	right: 0px;
+	width: 42px;
+	height: 42px;
+	border: none;
+	background: indigo;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+}
+
+
+@media all and (min-width: 1224px) {
+	#mercury,
+	#venus,
+	#earth,
+	#mars,
+	#jupiter,
+	#saturn,
+	#uranus,
+	#neptune {
+		float: none;
+		width: 500px;
+	}
+}
+
+@media all and (min-width: 1024px) and (max-width: 1224px) {
+	#mercury,
+	#venus,
+	#earth,
+	#mars,
+	#jupiter,
+	#saturn,
+	#uranus,
+	#neptune {
+		float: none;
+	}
+}
+
+@media all and (min-width: 600px) and (max-width: 1024px) {
+	#mercury {
+		width:150px;
+	}
+	
+	#venus, #earth {
+		width:150px
+	}
+	
+	#mars {
+		width: 140px;
+	}
+	
+	#jupiter, #uranus, #neptune  {
+		width:200px;
+	}
+	
+	#saturn {
+		width:270px;
+	}
+
+	article {
+		width: 50vw;
+		margin-top: 20px;
+	}
+
+	article h2 {
+		font-size: 16px;
+		margin: 10px;
+	}
+	
+	footer {
+		height: 100px;
+		margin-top: 30px;
+		width: 100%;
+	}
+
+	footer p {
+		font-size: 16px;
+	}
+
+	#vk {
+		max-width: 50px;
+		margin: 25px 40px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+}
+
+
+@media all and (min-width: 320px) and (max-width: 600px) {
+	#mercury {
+		width:100px;
+	}
+	
+	#venus, #earth {
+		width:100px
+	}
+	
+	#mars {
+		width: 100px;
+	}
+	
+	#jupiter, #uranus, #neptune  {
+		width:120px;
+	}
+	
+	#saturn {
+		width:130px;
+	}
+
+	header {
+		width: 600px;
+		height: 80px;
+	}
+	
+	#idheader {
+		width: 200px;
+		margin: 10px 10px;
+	}
+
+	#logo {
+		width: 50px;
+		height: 50px;
+		margin: 0px auto;
+	}
+	
+	#logo img {
+		max-width: 50px;
+		margin: 5px auto;
+	}
+	
+	nav {
+		float: right;
+		width: 50%;
+		margin: 10px 5px;
+	}
+	
+	nav ul {
+		line-height: 10px;
+	}
+	
+	nav ul li a {
+		font-size: 16px;
+		padding: 5px 5px;
+	}
+
+	#list {
+		
+		margin: 10px 25vw;
+	}
+
+	#list ul, article h1{
+		text-align: center;
+		float: none;
+		font-size: 18px;
+		margin: 20px 5px;
+		line-height: 1.2rem;
+	}
+
+	article h2, #planets p {
+		float: none;
+		font-size: 13px;
+		line-height: 1rem;
+		width: 90vw;
+		margin: auto 5px;
+	}
+
+	article h2 {
+		margin: auto 5px;
+	}
+
+	article {
+		width: 90vw;
+	}
+
+	footer {
+		height: 110px;
+		margin-top: 30px;
+		width: 100vw;
+		text-align: center;
+		margin: 10px 20px;
+	}
+
+	footer p {
+		text-align: center;
+		font-size: 10px;
+		line-height: 1rem;
+		width: 60%;
+		margin: 0px auto 20px auto;
+	}
+
+	#vk {
+		float: none;
+		max-width: 30px;
+		margin: 20px 5%;
+	}
+
+	h1 {
+		margin-top: 20px;
+	}
+	
+	article h2, #planet p, #planet h3 {
+		float: none;
+		font-size: 13px;
+		width: 80vw;
+	}
+	
+
+	article h2 {
+		margin: 0;
+	}
+
+	article {
+		float: none;
+		width: 90vw;
+	}
+}
+
+
+@media all and (min-width: 240px) and (max-width: 320px) {
+	#mercury {
+		width:70px;
+	}
+	
+	#venus, #earth {
+		width:70px
+	}
+	
+	#mars {
+		width: 70px;
+	}
+	
+	#jupiter, #uranus, #neptune  {
+		width:90px;
+	}
+	
+	#saturn {
+		width:100px;
+	}
+	
+	header {
+		width: 320px;
+		height: 80px;
+	}
+	
+	#idheader {
+		width: 200px;
+		margin: 10px 10px;
+	}
+
+	#logo {
+		width: 50px;
+		height: 50px;
+		margin: 0px auto;
+	}
+	
+	#logo img {
+		max-width: 50px;
+		margin: 5px auto;
+	}
+	
+	nav {
+		float: right;
+		width: 50%;
+		margin: 10px 5px;
+	}
+	
+	nav ul {
+		line-height: 10px;
+	}
+	
+	nav ul li a {
+		font-size: 16px;
+		padding: 5px 5px;
+	}
+
+	#list {
+		margin: 0px 30px;
+	}
+
+	#list ul {
+		margin: 0px 30px;
+	}
+	
+	#list ul, article h1 {
+		float: none;
+		text-align: center;
+		font-size: 16px;
+		line-height: 1.2rem;
+	}
+
+	h1 {
+		margin-top: 20px;
+	}
+	
+	article h2, #planet p, #planet h3 {
+		float: none;
+		font-size: 13px;
+		width: 80vw;
+	}
+	
+
+	article h2 {
+		margin: 0;
+	}
+
+	article {
+		float: none;
+		width: 90vw;
+	}
+
+	footer {
+		height: 143px;
+		overflow: hidden;
+		margin-top: 30px;
+		width: 320px;
+		text-align: center;
+		padding: 5px;
+	}
+
+	footer p {
+		margin: 10px 90px;
+		font-size: 10px;
+		line-height: 1rem;
+		max-width: 120px;
+		text-align: center;
+		width: 60%;
+	}
+
+	#vk {
+		max-width: 30px;
+		margin: 20px 20%;
+	}
+
+	.formtest h2, .formtest .answer {
+		font-size: 13px;
+		margin: 10px;
+		line-height: 1.2rem;
+	}
+
+	.formtest #question {
+		margin: 10px;
+	}
+}

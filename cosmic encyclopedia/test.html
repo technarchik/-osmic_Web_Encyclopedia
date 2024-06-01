@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>
+		Космическая энциклопедия - Тест: просто и интересно о нашей Солнечной системе!
+		</title>
+		<meta charset="utf-8">
+		<meta name="keywords" content="космос, энциклопедия, космическая, солнечная, система, планеты, тест" />
+		<meta name="robots" content="index,follow" />
+		<meta name="description" content="Давайте проверим, как хорошо Вы разбираетесь в истории астрономии, а также насколько внимательно Вы изучаете ночное небо!">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<style>
+			
+		</style>  
+	</head>
+	<body>
+        <div class="wrapper">
+			<header>
+				<div id="idheader">
+					<div id="logo">
+						<a href="index.html"><img src="img/логотип.png" alt="логотип"></a>
+					</div>
+					<nav>
+						<ul>
+							<li><a href="index.html">Главная</a></li>
+							<li><a href="test.html">Тест</a></li>
+							<li><a href="about.html">О проекте</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+			<main>
+				<div id="list">
+					<ul>
+						<li><a href="mercury.html">Меркурий</a></li>
+						<li><a href="venus.html">Венера</a></li>
+						<li><a href="earth.html">Земля</a></li>
+						<li><a href="mars.html">Марс</a></li>
+						<li><a href="jupiter.html">Юпитер</a></li>
+						<li><a href="saturn.html">Сатурн</a></li>
+						<li><a href="uranus.html">Уран</a></li>
+						<li><a href="neptune.html">Нептун</a></li>
+						<li>
+							<form>
+							<input type="text" placeholder="Искать...">
+							<button type="submit"></button>
+						  	</form>
+						</li>
+					</ul>
+				</div>
+				<article>
+					<h1>
+						Космический тест
+					</h1>
+					<h2>
+						Давайте проверим, как хорошо Вы разбираетесь в истории астрономии, а также насколько внимательно Вы изучаете ночное небо! Мечтательно разглядывать звезды, конечно, хорошо, но еще лучше, когда ты можешь назвать, из какого созвездия вон та звездочка... 
+					</h2>
+				</article>
+				<br class="clear">
+				
+				<form name="test" action="javascript:CosmosTest();" class="formtest">
+
+					<div class="question">
+						<h2>1) Какой стране впервые удалось совершить мягкую посадку космического аппарата на поверхность Марса?</h2>
+						<div class="answer">
+							<input name="q1" value="value2" id="value1" type="radio" /> СССР
+						</div>
+					
+						<div class="answer">
+							<input name="q1" value="value1" id="value2" type="radio" /> США
+						</div>
+					
+						<div class="answer">
+							<input name="q1" value="value1" id="value3" type="radio" /> Япония
+						</div>
+					</div>
+					
+					<div class="question">
+						<h2>2) Кто открыл атмосферу Венеры?</h2>
+						<div class="answer">
+							<input name="q2" value="value1" id="value4" type="radio" /> В. Струве
+						</div>
+					
+						<div class="answer">
+							<input name="q2" value="value2" id="value5" type="radio" /> М. Ломоносов
+						</div>
+					
+						<div class="answer">
+							<input name="q2" value="value1" id="value6" type="radio" /> А. Гумбольдт
+						</div>
+					</div>
+
+					<div class="question">
+						<h2>3) Кто впервые открыл спутники Юпитера?</h2>		
+						<div class="answer">
+							<input name="q3" value="value1" id="value7" type="radio" /> Аристотель
+						</div>
+					
+						<div class="answer">
+							<input name="q3" value="value1" id="value8" type="radio" /> Н. Коперник
+						</div>
+					
+						<div class="answer">
+							<input name="q3" value="value2" id="value9" type="radio" /> Г. Галилей
+						</div>
+					</div>
+					
+					<div id="buttons">
+						<button value="Submit" type="submit" class="button">Готово</button>
+						<button value="Reset" type="reset" class="button">Сбросить</button>
+					</div>
+				</form>
+			</main>
+			<br class="clear">
+
+			<footer>
+				<a href="https://vk.com/id267954101">
+					<img id="vk" src="img/vk_icon.png" alt="vk">
+				</a>
+				<p>
+					Все права защищены. Космическая энциклопедия &copy; 2022;
+				</p>
+			</footer>
+		</div>
+	<script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    </body> 
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>
+		Космическая энциклопедия - О проекте: просто и интересно о нашей Солнечной системе!
+		</title>
+		<meta charset="utf-8">
+		<meta name="keywords" content="наблюдений, науки, астрономия, научные, астрономии, журналы, новостями" />
+		<meta name="robots" content="index,follow" />
+		<meta name="description" content="Данный сайт создан с целью привлечь больше людей к изучению такой загадочной и красивой науки как астрономия">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<style>
+			article p {
+				font-size: 20px;
+				margin: 15px;
+			}
+			article a {
+				color:white; 
+			}
+			.ref {
+				margin: 20px;
+				font-family: Georgia, 'Times New Roman', Times, serif;
+				font-size: 20px;
+				display: none;
+			}
+			.useful_refs {
+				margin: 10px;
+				font-family: Georgia, 'Times New Roman', Times, serif;
+				font-size: 26px;
+			}
+		</style>
+	</head>
+	<body onload="Hello()">
+        <div class="wrapper">
+			<header>
+				<div id="idheader">
+					<div id="logo">
+						<a href="index.html"><img src="img/логотип.png" alt="логотип"></a>
+					</div>
+					<nav>
+						<ul>
+							<li><a href="index.html">Главная</a></li>
+							<li><a href="test.html">Тест</a></li>
+							<li><a href="about.html">О проекте</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+			<main>
+				<div id="list">
+					<ul>
+						<li><a href="mercury.html">Меркурий</a></li>
+						<li><a href="venus.html">Венера</a></li>
+						<li><a href="earth.html">Земля</a></li>
+						<li><a href="mars.html">Марс</a></li>
+						<li><a href="jupiter.html">Юпитер</a></li>
+						<li><a href="saturn.html">Сатурн</a></li>
+						<li><a href="uranus.html">Уран</a></li>
+						<li><a href="neptune.html">Нептун</a></li>
+						<li>
+							<form>
+							<input type="text" placeholder="Искать...">
+							<button type="submit"></button>
+						  	</form>
+						</li>
+					</ul>
+				</div>
+				<article>
+					<h1>
+						О проекте
+					</h1>
+					<h1 id="h1">&nbsp;</h1>
+					<h2>
+						Данный сайт создан с целью привлечь больше людей к изучению такой загадочной и красивой науки как астрономия. Конечно, Вы можете пользоваться этим сайтом, но все-таки рекомендуем также читать научные журналы и следить за последними новостями из мира астрономии.   
+					</h2>
+					<hr style="margin: 30px 0px;">
+					<p class="useful_refs">Полезные ссылки для наблюдений за небом&rarr;</p>
+					<ul>
+						<li class="ref">
+							<a href="http://meteoweb.ru/astro/nc.php" style="text-decoration:underline">Следить за спутниковыми данными</a>
+						</li>
+						<li class="ref">
+							<a href="https://svs.gsfc.nasa.gov/4955" style="text-decoration:underline">Лунные фазы в широком разрешении</a>
+						</li>
+						<li class="ref">
+							<a href="https://stellarium-web.org" style="text-decoration:underline">Карта звездного неба в режиме онлайн</a>
+						</li>
+					</ul>
+				</article>
+				<br class="clear">
+
+			</main>
+			<br class="clear">
+
+			<footer>
+				<a href="https://vk.com/id267954101">
+					<img id="vk" src="img/vk_icon.png" alt="vk">
+				</a>
+				<p>
+					Все права защищены. Космическая энциклопедия &copy; 2022
+				</p>	
+			</footer>
+		</div>
+		<script src="jquery-3.6.0.min.js"></script>
+		<script src="script.js"></script>
+    </body> 
+</html>
